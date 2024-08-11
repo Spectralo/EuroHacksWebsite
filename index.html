@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title> Eurohacks </title>
+    </head>
+    <body>
+        <nav>
+            <ul class="navbar">
+                <li class="navbar-item">
+                <a href="/home-page-light.html" aria-label="Eurohacks"><img src="/media/Banner.png" alt="Logo" width="100px"/></a>
+                </li>
+                <li class="nav-link">
+                <i class= "fa-regular fa-house" ></i>
+                <a href= "/"> <slot class="navbar-item"> Home Page </slot> </a>
+                </li>
+                <li class="nav-link">
+                <i class= "fa-regular fa-book" ></i>
+                <a href= "/"> <slot class="navbar-item"> Hackathons </slot> </a>
+                </li>
+                <li class="nav-link">
+                <i class= "fa-regular fa-newspaper" ></i>
+                <a href= "/"> <slot class="navbar-item"> About us </slot> </a>
+                </li>
+                <li class="nav-link">
+                <i class= "fa-regular fa-circle-info" ></i>
+                <a href= "/"> <slot class="navbar-item"> Hack Club</slot> </a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
