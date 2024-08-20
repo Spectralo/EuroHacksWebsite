@@ -1,0 +1,133 @@
+---
+import '@fontsource/poppins';
+import Carousel from '../components/carousel.vue';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Euro Hacks</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+	    <div class="gradient">
+			<a href="https://hackclub.com/"><img style="position: absolute; top: 0; left: 20px; border: 0; width: 256px; z-index: 999;" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"/></a>
+			<h1 class="bigtitle">Euro Hacks</h1>
+			<h2 class="principal">Attend to EuroHacks. <br /> More than 50+ Hackhatons <em>all over the Europe</em></h2>
+			<p class='subtitle'>Edinburgh</p>
+		</div>
+	    <img class="background" src="/images/background.webp" alt="Euro Hacks" />
+		<div class="pagelayout">
+		  <p class="hackhatonexplain">A hackathon is a social coding marathon where teenagers <mark>come together</mark> to <mark>build projects</mark> for a weekend and <mark>share them with the world.</mark></p>
+		  <p>We have hackhatons at every corner of Europe : </p>
+		  <Carousel client:load/>
+	</body>
+</html>
+
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eff1f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+img.background {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+}
+a {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: rgba(0, 0, 0, 0);
+}
+a:hover {
+    text-decoration-color: white;
+    text-decoration: wavy underline;
+    transition: 0.3s;
+}
+.gradient {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0) 100%);
+}
+.bigtitle {
+    font-weight: 700;
+    color: white;
+    margin-right: 2vw;
+    text-align: end;
+}
+em {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 0.2em;
+    color: #f9dcbc;
+}
+.principal {
+    text-align: center;
+    margin-top: 35vh;
+    color: white;
+    font-weight: 900;
+    font-size: 3vw;
+}
+
+.subtitle {
+    text-align: end;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    background-color: rgba(0,0,0,0.3);
+    width: fit-content;
+    align-self: end;
+    margin-top: auto;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-style: italic;
+    margin-right: 1vw;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.pagelayout {
+    padding: 2rem;
+    max-width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8vw;
+    font-weight: 700;
+}
+
+.hackhatonexplain {
+    font-size: 1.9vw;
+    font-weight: 800;
+}
+mark {
+    background-color: #f9dcbc;
+    border-radius: 10px;
+}
+
+html {
+    overscroll-behavior: none;
+}
+
+
+</style>

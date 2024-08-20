@@ -1,0 +1,17 @@
+[
+  {
+    "countryName": "France",
+    "placeName": "Paris",
+    "imgSource": "/countries/france.png"
+  },
+  {
+    "countryName": "United Kingdom",
+    "placeName": "London",
+    "imgSource": "/countries/united-kingdom.png"
+  },
+  {
+    "countryName": "Germany",
+    "placeName": "Munich",
+    "imgSource": "/countries/germany.png"
+  }
+]
